@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".puzzleMain">
+
+    <TextView
+        android:id="@+id/puzzle_current_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/current"
+        android:textAppearance="@style/Titles"
+        app:layout_constraintBottom_toTopOf="@+id/puzzle_solve_start"
+        app:layout_constraintEnd_toEndOf="@+id/puzzle_solve_start"
+        app:layout_constraintStart_toStartOf="@+id/puzzle_solve_start" />
+
+    <TextView
+        android:id="@+id/puzzle_goal_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/goal"
+        android:textAppearance="@style/Titles"
+        app:layout_constraintBottom_toTopOf="@+id/puzzle_goal"
+        app:layout_constraintEnd_toEndOf="@+id/puzzle_goal"
+        app:layout_constraintStart_toStartOf="@+id/puzzle_goal" />
+
+    <TextView
+        android:id="@+id/puzzle_moves_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/moves"
+        android:textAppearance="@style/Titles"
+        app:layout_constraintEnd_toStartOf="@+id/puzzle_goal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/puzzle_solve_start"
+        app:layout_constraintTop_toTopOf="@+id/puzzle_goal" />
+
+    <TextView
+        android:id="@+id/puzzle_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="@string/puzzle_goal"
+        android:textAppearance="@style/States"
+        app:layout_constraintBottom_toBottomOf="@+id/puzzle_solve_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/puzzle_moves_text"
+        app:layout_constraintTop_toTopOf="@+id/puzzle_solve_start" />
+
+    <TextView
+        android:id="@+id/puzzle_solve_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/orange"
+        android:text="@string/puzzle_start"
+        android:textAppearance="@style/States"
+        app:layout_constraintEnd_toStartOf="@+id/puzzle_moves_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/puzzle_moves_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textAppearance="@style/Explanation"
+        app:layout_constraintEnd_toEndOf="@+id/puzzle_moves_text"
+        app:layout_constraintStart_toStartOf="@+id/puzzle_moves_text"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_moves_text" />
+
+    <TextView
+        android:id="@+id/puzzle_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/Explanation"
+        app:layout_constraintEnd_toEndOf="@+id/puzzle_auto"
+        app:layout_constraintStart_toStartOf="@+id/puzzle_auto"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_auto" />
+
+    <LinearLayout
+        android:id="@+id/puzzle_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/puzzle_goal"
+        app:layout_constraintStart_toStartOf="@+id/puzzle_goal"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_message">
+
+        <Button
+            android:id="@+id/puzzle_reset"
+            style="@style/control_button"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:hint="@string/reset"
+            android:text="@string/reset"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/puzzle_solve"
+            style="@style/control_button"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/solve"
+            android:text="@string/solve"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/puzzle_next"
+            style="@style/control_button"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:hint="@string/next"
+            android:text="@string/next"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/bench_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/benchmarks"
+            android:textAppearance="@style/Titles"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/puzzle_benchmarks"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/puzzle_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/Message"
+        app:layout_constraintEnd_toEndOf="@+id/puzzle_goal"
+        app:layout_constraintStart_toStartOf="@+id/puzzle_goal"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_goal" />
+
+    <LinearLayout
+        android:id="@+id/puzzle_moves"
+        android:layout_width="155dp"
+        android:layout_height="408dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/puzzle_solve_start"
+        app:layout_constraintStart_toStartOf="@+id/puzzle_solve_start"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_solve_start"></LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

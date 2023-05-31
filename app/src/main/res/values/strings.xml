@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Problem Solver</string>
+    <string name="main_welcome">Welcome to the Problem Solver</string>
+    <string name="farmer_intro">A farmer and his wolf, goat,\nand cabbage come to the\nedge of a river they wish to\ncross:</string>
+    <string name="puzzle_intro">You are given a board\nwhich numbered\ntiles can slide around.\nThere is one blank\nspace that holds\nno tile. Here is an\nexample:</string>
+    <string name="farmer_welcome">Welcome to the FWGC Problem</string>
+    <string name="puzzle_welcome">Welcome to the 8-Puzzle Problem</string>
+    <string name="puzzle15_welcome">Welcome to the 15-Puzzle Problem</string>
+    <string name="puzzle_rules">A legal move consists\nof sliding a tile into\nthe blank space if the\ntile is adjacent to it.\nThe goal is to move\ntiles around until the\nboard looks like this:</string>
+    <string name="farmer_rules">There is a boat at the river\'s\nedge that only the farmer\ncan row. The farmer can\ntake at most one other\nobject besides himself on\na crossing, but if the wolf\nis ever left with the goat\nthe wolf will eat the goat;\nsimilarly, if the goat is left\nwith the cabbage, the goat\nwill eat the cabbage. Devise\na sequence of crossings\nof the river so that all four\ncharacters arrive safely on\nthe other side:</string>
+    <string name="problem_choose">Please choose a problem:</string>
+    <string name="button_FWGC">FWGC</string>
+    <string name="button_puzzle">8 PUZZLE</string>
+    <string name="button_puzzle15">15 PUZZLE</string>
+    <string name="button_start_FWGC">Begin FWGC Problem</string>
+    <string name="button_start_puzzle">Begin 8-Puzzle Problem</string>
+    <string name="button_start_puzzle15">Begin 15-Puzzle Problem</string>
+    <string name="current">Current State</string>
+    <string name="goal">Goal State</string>
+    <string name="reset">RESET</string>
+
+    <string name="puzzle_start">+---+---+---+\n| 2 | 8 | 3 |\n+---+---+---+\n| 1 | 6 | 4 |\n+---+---+---+\n| 7 | \t | 5 |\n+---+---+---+</string>
+    <string name="puzzle_goal">+---+---+---+\n| 1 | 2 | 3 |\n+---+---+---+\n| 8 | \t | 4 |\n+---+---+---+\n| 7 | 6 | 5 |\n+---+---+---+</string>
+    <string name="farmer_start">"   | |   \n F | |   \n W | |   \n G | |   \n C | |   \n   | |   "</string>
+    <string name="farmer_goal">"   | |   \n   | | F \n   | | W \n   | | G \n   | | C \n   | |   "</string>
+    <string name="solve">SOLVE</string>
+    <string name="next">NEXT</string>
+    <string name="alone">Farmer Goes\nAlone</string>
+    <string name="wolf">Farmer Takes\nWolf</string>
+    <string name="goat">Farmer Takes\nGoat</string>
+    <string name="cabbage">Farmer Takes\nCabbage</string>
+    <string name="benchmarks">Benchmarks:</string>
+    <string name="moves">Moves</string>
+    <string name="tile1">Slide Tile 1</string>
+    <string name="tile2">Slide Tile 2</string>
+    <string name="tile3">Slide Tile 3</string>
+    <string name="tile4">Slide Tile 4</string>
+    <string name="tile5">Slide Tile 5</string>
+    <string name="tile6">Slide Tile 6</string>
+    <string name="tile7">Slide Tile 7</string>
+    <string name="tile8">Slide Tile 8</string>
+    <string name="illegal">Illegal Move, Try Again</string>
+    <string name="win">Congratulations, you win!</string>
+    <string name="puzzle15_start">+---+---+---+---+\n| 5 | 1 | 2 | 3 |\n+---+---+---+---+\n| 6 | \t | 7 | 4 |\n+---+---+---+---+\n| 9 |10 |11 | 8 |\n+---+---+---+---+\n|13 |14 |15 | 2 |\n+---+---+---+---+</string>
+    <string name="puzzle15_goal">+---+---+---+---+\n| 1 | 2 | 3 | 4 |\n+---+---+---+---+\n| 5 | 6 | 7 | 8 |\n+---+---+---+---+\n| 9 |10 |11 |12 |\n+---+---+---+---+\n|13 |14 |15 | \t |\n+---+---+---+---+</string>
+
+</resources>
